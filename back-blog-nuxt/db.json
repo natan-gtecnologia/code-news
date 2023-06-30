@@ -50,16 +50,5 @@
         "nivel": "Programador front-end a 1 ano(s)"
       }
     }
-    
-  ],
-  "categorias": [
-    {
-      "id": 1,
-      "nome": "Hambúrgueres"
-    },
-    {
-      "id": 2,
-      "nome": "Refrigerantes"
-    }
   ]
 }
