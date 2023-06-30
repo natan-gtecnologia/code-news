@@ -1,0 +1,65 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "O que é Nuxt.js? ",
+      "descricao": "Nuxt.js é o framework Vue mais intuitivo disponível atualmente. Ele combina o poder do Vue.js com recursos de renderização do lado do servidor para torná-lo ainda mais poderoso. Com ele, você pode construir desde um aplicativo de renderização do lado do cliente do Vue.js completo, até um aplicativo gerado estaticamente abrangente e um aplicativo monolítica. Nuxt.js resolve o problema de estruturação do seu projeto Vue.js, pois ele vem com uma arquitetura de desenvolvimento de frontend pronta para o empreendimento. As funcionalidades do Nuxt.js já estão estruturadas usando os padrões da indústria para criar aplicativos empresariais.",
+      "autor": {
+        "nome": "Natan Falconi",
+        "formacao": "Formado em Análise e Desenvolvimento de Sistemas",
+        "nivel": "Programador front-end a 1 ano(s)"
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "A Segunda noticia do site",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "autor": {
+        "nome": "Natan Falconi",
+        "formacao": "Formado em Análise e Desenvolvimento de Sistemas",
+        "nivel": "Programador front-end a 1 ano(s)"
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "A terceira noticia do site",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "autor": {
+        "nome": "Natan Falconi",
+        "formacao": "Formado em Análise e Desenvolvimento de Sistemas",
+        "nivel": "Programador front-end a 1 ano(s)"
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "A Quarta noticia do site",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "autor": {
+        "nome": "Natan Falconi",
+        "formacao": "Formado em Análise e Desenvolvimento de Sistemas",
+        "nivel": "Programador front-end a 1 ano(s)"
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "A Quinta noticia do site",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "autor": {
+        "nome": "Natan Falconi",
+        "formacao": "Formado em Análise e Desenvolvimento de Sistemas",
+        "nivel": "Programador front-end a 1 ano(s)"
+      }
+    }
+    
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Hambúrgueres"
+    },
+    {
+      "id": 2,
+      "nome": "Refrigerantes"
+    }
+  ]
+}
