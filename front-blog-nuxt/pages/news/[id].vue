@@ -1,8 +1,8 @@
-<template>
+<!-- <template>
   <div class="w-1/2 mx-auto my-20">
     <div class="mt-20 mb-10">
       <h2 class="text-5xl font-semibold mb-5 text-indigo-500 font-mono">
-        {{ article?.titulo }}
+        {{ article?.title }}
       </h2>
       <p class="mb-5 text-gray-200 font-thin">{{ article?.descricao }}</p>
 
@@ -24,17 +24,19 @@
 </template>
 
 <script setup>
-import api from "../../services/api";
+// import api from "../../services/api";
 import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
+import useApi from "services/UseApi";
 
 const article = ref({});
 const route = useRoute();
 
+const { getById } = useApi()
+
 async function getArticle() {
   try {
-    const { data } = await api.get(`noticias/${route.params.id}`);
-    article.value = data;
+    article.value = await getById('posts', route.params.id);
   } catch (error) {
     console.error(error);
   }
@@ -43,4 +45,11 @@ async function getArticle() {
 onMounted(() => {
   getArticle();
 });
-</script>
+</script> -->
+
+<template>
+  <div>
+    oi
+  </div>
+
+</template>

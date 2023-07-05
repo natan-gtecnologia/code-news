@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  modules: ['@nuxtjs/supabase'],
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
@@ -9,9 +10,10 @@ export default defineNuxtConfig({
     }
   },
   runtimeConfig: {
+    apiSecret: process.env.SUPABASE_KEY,
     public: {
-      apiBase: 'http://localhost:3000'
-    }
+      apiBase: process.env.SUPABASE_URL
+    },
   }
   
 })
