@@ -1,7 +1,7 @@
 <template>
   <div class="sm:w-1/2 w-9/12 mx-auto my-20">
     <div class="mt-20 mb-10">
-      <h2 class="text-5xl font-semibold mb-5 text-indigo-500 font-mono">
+      <h2 class="sm:text-5xl text-4xl font-semibold mb-5 text-indigo-500 font-mono">
         {{ article?.title }}
       </h2>
       <div>
