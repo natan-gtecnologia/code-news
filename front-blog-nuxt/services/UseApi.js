@@ -10,7 +10,7 @@ export default function useApi() {
         const { data, error } = await supabase
             .from(table)
             .select('*')
-            .order('id')
+            .order('id', { ascending: false })
         if (error) throw error
         return data
     }
@@ -25,23 +25,32 @@ export default function useApi() {
     //     return data
     // }
 
-    // const listJoin = async (table, joinTable) => {
-    //     const { data, error } = await supabase
-    //         .from(table)
-    //         .select(`
-    //         *, 
-    //         ${joinTable}(
-    //             id, name
-    //         )`)
+    const listJoin = async (table, joinTable) => {
+        const { data, error } = await supabase
+            .from(table)
+            .select(`
+            *, 
+            ${joinTable}(
+                *
+            )`).order('id', { ascending: false })
 
-    //     if (error) throw error
-    //     return data
-    // }
+        if (error) throw error
+        return data
+    }
 
     const getById = async (table, id) => {
         const { data, error } = await supabase
             .from(table)
             .select('*')
+            .eq('id', id)
+        if (error) throw error
+        return data[0]
+    }
+    const getByIdJoin = async (table, id, joinTable) => {
+        const { data, error } = await supabase
+            .from(table)
+            .select(`* ,
+            ${joinTable}(*)`)
             .eq('id', id)
         if (error) throw error
         return data[0]
@@ -108,7 +117,8 @@ export default function useApi() {
     return {
         list,
         getById,
-        // listJoin,
+        listJoin,
+        getByIdJoin,
         // post,
         // update,
         // remove,
